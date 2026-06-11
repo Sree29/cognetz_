@@ -7,14 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const themeBtns = document.querySelectorAll('.theme-toggle-btn');
         themeBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
+            const handleToggle = (e) => {
+                e.preventDefault();
                 const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
                 const newTheme = currentTheme === 'light' ? 'dark' : 'light';
                 
                 document.documentElement.setAttribute('data-theme', newTheme);
                 localStorage.setItem('theme', newTheme);
                 updateThemeToggleIcons(newTheme);
-            });
+            };
+            btn.addEventListener('click', handleToggle);
+            btn.addEventListener('touchend', handleToggle);
         });
     };
 
