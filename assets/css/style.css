@@ -61,7 +61,7 @@ ol {
 }
 
 body {
-    background: #000;
+    background: var(--body-bg, #000);
     font-size: 14px;
     font-weight: 500;
     font-family: var(--font_urbanist);
@@ -3873,6 +3873,7 @@ a {
 /* Light Mode Support */
 [data-theme="light"] {
     --bg-color: #ffffff;
+    --body-bg: #ffffff;
     --primary: #0a0a0a;
     --secondary: #4d4d4d;
     --tertiary: #777777;
@@ -3880,8 +3881,99 @@ a {
 }
 
 [data-theme="light"] body {
-    background: var(--bg-color);
+    background: var(--body-bg);
     color: var(--primary);
+}
+
+/* Preloader */
+[data-theme="light"] .preloader-wrap {
+    background: #ffffff !important;
+}
+
+/* Hero section */
+[data-theme="light"] .hero-sec .hero-inner {
+    background: #ffffff !important;
+}
+
+/* Notch bar menu */
+[data-theme="light"] .notch-bar-menu-wrap {
+    background: linear-gradient(218deg, #e8e8e8 34%, #d4d4d4 69%) !important;
+    border-right: 1px solid #cccccc !important;
+}
+
+[data-theme="light"] .notch-bar-menu-wrap li a {
+    background-color: #333 !important;
+    box-shadow: 0 0 5px #333 !important;
+}
+
+/* Sidebar overlay */
+[data-theme="light"] .header-sidebar-wrap {
+    background: rgba(0,0,0,0.4) !important;
+}
+
+/* Hamburg menu background */
+[data-theme="light"] .hamburg-menu {
+    background: #ffffff !important;
+}
+
+[data-theme="light"] .hamburg-menu span {
+    background: #000000 !important;
+}
+
+/* Dropdown */
+[data-theme="light"] .header-menu-wrap .navbar .menu li .dropdown-list {
+    background: rgba(255,255,255,0.98) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Team member boxes */
+[data-theme="light"] .team-member-box {
+    background: linear-gradient(180deg, #f0f0f0 0%, #ffffff 35%, #ffffff 65%, #f0f0f0 100%) !important;
+}
+
+[data-theme="light"] .team-member-box .shape span {
+    background: #000000 !important;
+}
+
+/* Funfact box border */
+[data-theme="light"] .funfact-box {
+    border-color: #cccccc !important;
+}
+
+/* Header phone color */
+[data-theme="light"] .header-phone {
+    color: var(--secondary) !important;
+}
+
+/* Three dots btn default state */
+[data-theme="light"] .three-dots-btn {
+    border-color: rgba(0,0,0,0.2) !important;
+}
+
+[data-theme="light"] .three-dots-btn span {
+    background-color: #000000 !important;
+}
+
+/* Section title gradient for light */
+[data-theme="light"] .section-title.section-title2 {
+    background: linear-gradient(90deg, #0a0a0a 16%, #777777 140%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* About section */
+[data-theme="light"] .about-sec {
+    background: linear-gradient(0deg, rgba(240,240,240,0) 0%, #f0f0f0 100%) !important;
+}
+
+/* Scroll to top */
+[data-theme="light"] .to-top-progress circle:nth-child(2) {
+    stroke: #555555 !important;
+}
+
+[data-theme="light"] .to-top-progress i {
+    color: #555555 !important;
 }
 
 [data-theme="light"] .about-sec {
