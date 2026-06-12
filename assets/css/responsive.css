@@ -368,9 +368,9 @@
     }
 
     .header-sidebar-wrap .header-sidebar-content .header-sidebar-top {
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 70px;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        padding-top: 60px !important;
     }
 
     .header-sidebar-wrap .header-sidebar-content .sidebar-theme-toggle {

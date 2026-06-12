@@ -663,15 +663,12 @@ a {
 }
 
 .header-sidebar-wrap .header-sidebar-content .sidebar-theme-toggle {
-    position: absolute;
-    left: 64px;
-    top: 42px;
-    z-index: 10;
+    display: none !important;
 }
 
 
 .header-sidebar-wrap .header-sidebar-content .header-sidebar-top {
-    padding: 36px 64px 0 64px;
+    padding: 60px 64px 0 64px !important;
     width: 100%;
 }
 
@@ -2049,7 +2046,7 @@ a {
     font-weight: 500;
     line-height: 28px;
     margin: 0;
-    color: #ffffff;
+    color: var(--primary);
     max-width: 806px;
     opacity: 0.4;
     transition: 0.3s;
@@ -3891,6 +3888,10 @@ a {
     background: #ffffff !important;
 }
 
+[data-theme="light"] .preloader-wrap video {
+    filter: invert(1) !important;
+}
+
 /* Hero section */
 [data-theme="light"] .hero-sec .hero-inner {
     background: #ffffff !important;
@@ -4167,4 +4168,30 @@ a {
 [data-theme="light"] .faq-sec .faq-bottom p a {
     color: var(--primary) !important;
     border-color: var(--primary) !important;
+}
+
+/* Service Section Light Theme Overrides */
+[data-theme="light"] .service-sec .service-lists-header {
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+[data-theme="light"] .service-sec-2 .service-box {
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+/* Ensure active/hovered text inside the dark service box remains readable (white) in light mode */
+[data-theme="light"] .service-box.active .service-inner .title a,
+[data-theme="light"] .service-box.active .service-inner .title,
+[data-theme="light"] .service-box.active .service-inner .service-feature-lists,
+[data-theme="light"] .service-box.active .service-inner .service-feature-description p,
+[data-theme="light"] .service-box:hover .service-inner .title a,
+[data-theme="light"] .service-box:hover .service-inner .title,
+[data-theme="light"] .service-box:hover .service-inner .service-feature-lists,
+[data-theme="light"] .service-box:hover .service-inner .service-feature-description p {
+    color: #ffffff !important;
+}
+
+/* Make service illustration backgrounds pure black so screen blending removes them completely */
+.service-box .service-inner .service-img-box img {
+    filter: contrast(1.4) brightness(0.85) !important;
 }
