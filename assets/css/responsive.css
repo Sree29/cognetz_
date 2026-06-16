@@ -468,6 +468,7 @@
         overflow: hidden;
         transition: opacity 0.3s ease, height 0.3s ease !important;
         padding: 0 !important;
+        mix-blend-mode: screen !important;
     }
 
     .service-sec:not(.service-sec-2) .service-box.active .service-inner .service-img-box,
@@ -699,6 +700,7 @@
     .about-sec .funfacts-wrap .funfact-box:nth-child(odd) {
         margin-top: 0;
     }
+
 
     .contact-sec .contact-content>p br {
         display: none;

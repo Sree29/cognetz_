@@ -332,9 +332,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const wraps = document.querySelectorAll('.funfacts-wrap');
         wraps.forEach(wrap => {
             const boxes = wrap.querySelectorAll('.funfact-box');
-            boxes.forEach(box => {
+            boxes.forEach((box, index) => {
                 const makeActive = () => {
-                    boxes.forEach(b => b.classList.remove('active'));
+                    boxes.forEach((b, idx) => {
+                        b.classList.remove('active');
+                    });
                     box.classList.add('active');
                 };
                 box.addEventListener('mouseenter', makeActive);
