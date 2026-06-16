@@ -1942,12 +1942,12 @@ a {
 
 .service-sec:not(.service-sec-2) .service-box .service-inner .service-img-box img {
     position: absolute !important;
-    right: 180px !important;
+    right: 140px !important;
     left: auto !important;
     top: 50% !important;
-    margin-top: -60px !important;
-    height: 120px !important;
-    width: 130px !important;
+    margin-top: -90px !important;
+    height: 180px !important;
+    width: 195px !important;
     object-fit: contain !important;
     animation: upDownAnim 2s infinite linear;
     mix-blend-mode: screen !important;

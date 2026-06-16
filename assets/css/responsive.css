@@ -131,11 +131,11 @@
     }
 
     .service-sec:not(.service-sec-2) .service-box .service-inner .service-img-box img {
-        width: 120px !important;
-        height: 110px !important;
+        width: 160px !important;
+        height: 147px !important;
         top: 50% !important;
-        margin-top: -55px !important;
-        right: 160px !important;
+        margin-top: -73px !important;
+        right: 120px !important;
         left: auto !important;
     }
 
@@ -472,7 +472,7 @@
 
     .service-sec:not(.service-sec-2) .service-box.active .service-inner .service-img-box,
     .service-sec:not(.service-sec-2) .service-box:hover .service-inner .service-img-box {
-        height: 125px !important;
+        height: 165px !important;
         opacity: 1 !important;
     }
 
@@ -484,8 +484,8 @@
         right: auto !important;
         top: auto !important;
         margin-top: 0 !important;
-        width: 120px !important;
-        height: 110px !important;
+        width: 160px !important;
+        height: 150px !important;
         object-fit: contain !important;
         opacity: 1 !important;
         animation: upDownAnim 2s infinite linear !important;

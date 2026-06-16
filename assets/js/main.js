@@ -327,6 +327,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // 8b. Fun Fact Box Hover (Desktop) & Click (Mobile)
+    const initFunFactBoxes = () => {
+        const wraps = document.querySelectorAll('.funfacts-wrap');
+        wraps.forEach(wrap => {
+            const boxes = wrap.querySelectorAll('.funfact-box');
+            boxes.forEach(box => {
+                const makeActive = () => {
+                    boxes.forEach(b => b.classList.remove('active'));
+                    box.classList.add('active');
+                };
+                box.addEventListener('mouseenter', makeActive);
+                box.addEventListener('click', makeActive);
+            });
+        });
+    };
+
     // 9. Preloader Fade Out
     const initPreloader = () => {
         const preloader = document.querySelector('.preloader-wrap');
@@ -338,6 +354,9 @@ document.addEventListener('DOMContentLoaded', () => {
             preloader.style.visibility = 'hidden';
             setTimeout(() => {
                 preloader.style.display = 'none';
+                if (typeof ScrollTrigger !== 'undefined') {
+                    ScrollTrigger.refresh();
+                }
             }, 600);
         };
 
@@ -404,6 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initAccordions();
     initJobAccordions();
     initServiceBoxes();
+    initFunFactBoxes();
     initHoverMouse();
 
     // 9. AOS (Animate on Scroll)
